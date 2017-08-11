@@ -255,6 +255,9 @@ body {
   border: 3px solid red;
 
 }
-.ingredients{
-
+.headlog{
+    letter-spacing: 3px;
+    font-size: 100px;
+    font-family: cursive;
+    margin-bottom: 20px;
 }
