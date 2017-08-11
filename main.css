@@ -20,11 +20,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
+
+}
+
+.hero1{
+    background-image: url('https://thumb9.shutterstock.com/display_pic_with_logo/438874/260105885/stock-photo--moroccan-traditional-boiled-eggs-with-salt-and-cumin-for-iftar-in-ramadan-time-260105885.jpg');
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 4px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #app .navbar {
     color: white;
     background-color: #cb202d;
+    margin-bottom: 0px;
+
 }
 
 #app .navbar a {
@@ -36,7 +53,9 @@ body {
 }
 
 #app .login {
-    background-color: #cb202d;
+  background-image: url("https://www.colourbox.com/preview/2226606-salad-with-vegetables-and-greens.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
     height: 100vh;
     min-height: 500px;
     display: flex;
@@ -49,7 +68,7 @@ body {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: #c4da54;
     padding: 1rem;
     padding-top: 0;
     border-radius: 4px;
@@ -64,7 +83,7 @@ body {
 .restaurant {
     background-color: white;
     position: relative;
-    width: 600px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
@@ -76,14 +95,33 @@ body {
     display: flex;
     font-family: sans-serif;
 }
+.rest-wrapper .image{
+    margin-right: 10px;
+}
 
-.rest-wrapper .image {
-    margin-right: 1rem;
+.restinfo .image {
+    margin-right:auto;
+    margin-left: auto;
+
+}
+
+.restinfo .image img {
+    border-radius: 5px;
+    width:960px;
+    height: 400px;
+    margin-bottom: 1rem;
+}
+
+/*.rest-wrapper .image {
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .rest-wrapper .image img {
     border-radius: 4px;
-}
+    width: 900px;
+}*/
 
 .rest-wrapper .rest-name {
     font-size: 24px;
@@ -141,4 +179,82 @@ body {
 .search-bar form .input-wrapper {
    flex: 1;
    margin-right: 1rem;
+}
+
+.bestDish .button {
+    display: inline-block;
+
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#tracking{
+  background-color:#33b756;
+}
+.restname{
+  font-size: 3.9rem;
+  text-shadow: 2px 2px 2px orange;
+  color:red;
+  padding: 5px 0px 15px 5px;
+  cursor: pointer;
+  text-align:center;
+  letter-spacing: 2px;
+
+}
+
+#app{
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-image: url('https://www.colourbox.com/preview/3946908-dairy-products.jpg');*/
+}
+.restinfo .rest-category {
+    color: #67421c;
+    text-transform: uppercase;
+    font-size: 30px;
+    position: relative;
+}
+.restinfo .rest-category small{
+  position: absolute;
+  right: 10px;
+}
+
+#taste{
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: cursive;
+
+
+}
+.recommend{
+  padding-top: 10px;
+
+}
+.val{
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: fantasy;
+}
+#type1{
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: cursive;
+}
+.bestImage img{
+  margin: 30px auto ;
+  width: 100%;
+  border-radius: 10px;
+  /*width: 600px;*/
+  height: 600px;
+}
+.veg{
+  border: 3px solid green;
+
+}
+.nonveg{
+  border: 3px solid red;
+
+}
+.ingredients{
+
 }

@@ -1,0 +1,114 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Foodie</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#!/home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#!/veganfinder">veganfinder</a></li>
+            <li><a href="#!/">Logout</a></li>
+        </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="rest1" ng-controller="restaurantController">
+
+  <div class="rest2">
+      <div class="restaurant "  ng-if="restaurant.name">
+        <!-- <div class="rest-wrapper wrapper1">
+            <div class="rest-name">
+            <strong>{{restaurant.name}}</strong>
+            </div>
+            <div class="rating">
+                <strong>{{restaurant.vote}}</strong
+            </div>
+            <div class="image">
+                <img ng-src="{{restaurant.image}}">
+            </div>
+            <div class="rest-category">
+                  <strong> {{restaurant.location}}</strong>
+                   &nbsp;<span class="glyphicon glyphicon-record" aria-hidden="true">&nbsp</span>
+                   <small>{{restaurant.category}} </small>
+            </div>
+
+       </div> -->
+       <div class ="restinfo">
+         <div class="rest-name restname">
+         <strong>{{restaurant.name}}</strong>
+         </div>
+         <div class="rating">
+             <strong>{{restaurant.vote}}</strong>
+         </div>
+           <div class="image">
+               <img ng-src="{{restaurant.image}}">
+           </div>
+           <div class="rest-category">
+                   <strong> Frais et savoureux </strong>
+                 <!-- &nbsp;<span class="glyphicon glyphicon-record" aria-hidden="true">&nbsp</span> -->
+
+                   <small>{{restaurant.category}} </small>
+            </div>
+         </div>
+         <div class="recommend">
+               <div  class="type">
+                 <div id="taste"><strong>You Will Lose Your Heart</strong></div>
+                 <div class="val"><small>{{restaurant.Recommend}}</small></div>
+               </div>
+               <div>
+
+
+               <div ng-if="restaurant.bestDish" class="bestDish value">
+                 <div id="type1"><small><strong>Recommended:</strong></small>&nbsp&nbsp</strong><span>{{restaurant.bestDish.name}}</span></strong></div>
+                 <!-- <span>{{restaurant.bestDish.name}}</span> -->
+                  <div class="button">
+                   <!-- <div ng-click="show()" class="button_view"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbspView</div> -->
+                   <div class="button_get">
+                     <button type="button" id="tracking" name="get" class="btn btn-primary" autocomplete="off" ng-click="findfoodtype(restaurant.bestDish.image)">
+                      VEG TEST
+                     </button>
+                   </div>
+                 </div>
+
+                 <div class="button">
+                  <!-- <div ng-click="show()" class="button_view"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbspView</div> -->
+                  <div class="button_get">
+                    <button type="button" id="tracking" name="get" class="btn btn-primary" autocomplete="off" ng-click="getingredients(restaurant.bestDish.image)">
+                    GET INGREDIENTS
+                    </button>
+                  </div>
+                </div>
+
+
+                         <div class="bestImage">
+                           <img ng-src="{{restaurant.bestDish.image}}" class="bestDish">
+                         </div>
+                         <div ng-if="ingredients" class="ingredients hidden">
+                             <ol>
+                                 <li ng-repeat="ingredient in ingredients1">
+                                     {{ingredient}}
+                                </li>
+                            </ol>
+                        </div>
+
+               </div>
+             </div>
+             </div>
+
+    </div>
+</div>
+</div>
